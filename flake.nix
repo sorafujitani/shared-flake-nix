@@ -36,6 +36,8 @@
 
               shellHook = ''
                 export SHELL="${pkgs.zsh}/bin/zsh"
+                export IN_NIX_SHELL=1
+                export name=""
                 ${shellHook}
               '';
             }
